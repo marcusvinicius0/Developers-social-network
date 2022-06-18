@@ -1,0 +1,109 @@
+.mainContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoContainer{
+    background: linear-gradient(to top right, #021B79, #045AC5);
+    min-width: 60vw;
+    min-height: 100vh;
+    border-top-right-radius: 10rem;
+}
+
+.contentContainer{
+    padding: 12rem 0 0 5rem;
+
+    
+
+    h1{
+        color: var(--white);
+        font-size: 3rem;
+    }
+
+    p{
+        padding: 1rem 0 1.5rem 0;
+        color: var(--white);
+        font-size: 1.4rem;
+    }
+
+    a{
+        color: var(--white);
+        font-size: 1.1rem;
+        background-color: var(--soft-blue);
+        padding: 0.5rem;
+        border-radius: 1.2rem;
+    }
+}
+
+.loginContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: red; //se eu diminuir o height da box, paro de ter quebra de tela com os 'icons' inseridos?? - fazer teste.
+    min-width: 40vw;
+    min-height: 100vh;
+
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    // .emailIcon{
+    //     position: relative;
+    //     top: 3.2rem;
+    //     left: 0.4rem;
+    // }
+ 
+    // .lockIcon{
+    //     position: relative;   
+    //     top: 3rem;
+    //     left: 0.4rem;
+    // }
+
+    // .userIcon{
+    //     position: relative;
+    //     top: -13.7rem;
+    //     right: 8.5rem;
+    // }
+   
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+
+    button{
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 920px){
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logoContainer{
+        min-width: 100vw;
+        min-height: 50vh;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 10rem;
+
+        .contentContainer{
+            padding-top: 8rem;
+            padding-left: 2rem;
+        }
+    }
+
+    .loginContainer{
+        min-width: 100vw;
+        min-height: 50vh;
+        padding-top: 2rem;
+    }
+
+
+}
+

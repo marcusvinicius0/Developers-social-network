@@ -1,0 +1,53 @@
+
+.publicationBox{
+    background-color: var(--white);
+    max-width: 600px;
+    height: 120px;
+    margin: 5rem auto 1rem auto;
+    border-radius: 15px;
+
+    img{
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        cursor: pointer;
+        margin: 1rem 1rem 0 1rem;
+    }
+
+    input{
+        min-width: 35vw;
+        height: 40px;
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 15px;
+        padding-left: 1rem;
+        cursor: pointer;
+        position: relative;
+        top: -1rem;
+        transition: all 0.5s;
+    }
+
+    input:hover{
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    span{
+        display: flex;
+        gap: 2rem;
+        margin-top: 0.5rem;
+        margin-left: 5rem;
+        max-width: 6vw;
+
+        svg{
+            cursor: pointer;
+        }
+    }
+}
+
+.feed{
+    margin: 0 auto;
+    background-color: var(--white);
+    max-width: 600px;
+    height: 50vh;
+    border-radius: 15px;
+}
