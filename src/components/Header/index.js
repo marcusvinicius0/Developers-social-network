@@ -10,7 +10,7 @@ import { FiSearch, FiX } from 'react-icons/fi';
 import { AiOutlineHome } from 'react-icons/ai';
 import { FaUsers } from 'react-icons/fa';
 import { BsFillChatDotsFill } from 'react-icons/bs';
-import {BiMenuAltRight} from 'react-icons/bi';
+import { BiMenuAltRight } from 'react-icons/bi';
 
 export default function Header() {
     const [showMenu, setShowMenu] = useState(false);
@@ -48,17 +48,17 @@ export default function Header() {
                 </ul>
             </nav>
 
-            <span onClick={() => setShowMenu(!showMenu)}>
-                    {showMenu ? <FiX size={40} color="var(--red-900)" />
-                        :
-                        <BiMenuAltRight size={40} color="var(--red-900)" />
-                    }
+            <span className={styles.menuHamb} onClick={() => setShowMenu(!showMenu)}>
+                {showMenu ? <FiX size={40} color="var(--red-900)" />
+                    :
+                    <BiMenuAltRight size={40} color="var(--red-900)" />
+                }
             </span>
 
-            <div className={styles.divPicture}>
-               <Link to="/profile">
-               <img src={avatar} alt="usuario-perfil" />
-               </Link>
+            <div className={styles.pictureBox}>
+                <Link to="/profile">
+                    <img src={avatar} alt="usuario-perfil" />
+                </Link>
             </div>
 
         </header>

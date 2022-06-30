@@ -11,9 +11,7 @@
 }
 
 .contentContainer{
-    padding: 12rem 0 0 5rem;
-
-    
+    padding: 12rem 0 0 5rem;   
 
     h1{
         color: var(--white);
@@ -40,7 +38,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: red; //se eu diminuir o height da box, paro de ter quebra de tela com os 'icons' inseridos?? - fazer teste.
+    // background-color: red; //se eu diminuir o height da box, paro de ter quebra de tela com os 'icons' inseridos?? - fazer teste.
     min-width: 40vw;
     min-height: 100vh;
 

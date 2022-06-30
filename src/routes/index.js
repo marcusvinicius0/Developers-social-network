@@ -4,7 +4,7 @@ import SignIn from '../pages/signin';
 import SignUp from '../pages/signup';
 
 import Dashboard from '../pages/dashboard';
-import Profile from '../pages/Profile';
+import Profile from '../pages/profile';
 
 export default function MyRoutes() {
     return (
